@@ -1,11 +1,11 @@
 function palindrome(x) {
     // Convert the integer to a string
-    const str = x.toString();
+    const number = x.toString();
     
     // Iterate through the string from both ends towards the center
-    for (let i = 0, j = str.length - 1; i < j; i++, j--) {
+    for (let i = 0, j = number.length - 1; i < j; i++, j--) {
         // If characters at current positions don't match, return false
-        if (str[i] !== str[j]) {
+        if (number[i] !== number[j]) {
             return false;
         }
     }
